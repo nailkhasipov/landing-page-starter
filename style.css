@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
 html, body {
   padding: 0;
   margin: 0;
@@ -12,32 +21,69 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.intro .menu {
+label {
+  display: block;
+}
+
+input {
   width: 100%;
 }
 
-.intro .menu .brand {
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.menu .brand {
   display: inline-block;
   vertical-align: middle;
 }
 
-.menu-list {
+.menu .menu-list {
   float: right;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.menu-list .menu-item {
+.menu .menu-list .menu-item {
   display: inline-block;
   zoom: 1;
   vertical-align: middle;
 }
 
-.intro h1 {
+.splash h1 {
   margin-top: 100px;
 }
 
 .splash {
   text-align: center;
+}
+
+.features h2 {
+  text-align: center;
+}
+
+.feature {
+  width: 320px;
+  float: left;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact form {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.footer p {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 320px; 
+  }
 }
