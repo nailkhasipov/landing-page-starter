@@ -21,6 +21,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+section > h2 {
+  text-align: center;
+}
+
 label {
   display: block;
 }
@@ -60,10 +64,6 @@ input {
   text-align: center;
 }
 
-.features h2 {
-  text-align: center;
-}
-
 .feature {
   width: 320px;
   float: left;
@@ -90,16 +90,12 @@ input {
   text-align: center;
 }
 
-.contact h2 {
-  text-align: center;
-}
-
 .contact form {
   width: 320px;
   margin: 0 auto;
 }
 
-.footer p {
+footer p {
   text-align: center;
 }
 
