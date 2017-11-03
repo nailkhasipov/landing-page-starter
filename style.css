@@ -64,9 +64,13 @@ input {
   text-align: center;
 }
 
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .feature {
   width: 320px;
-  float: left;
 }
 
 .logos {
